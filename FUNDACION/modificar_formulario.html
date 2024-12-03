@@ -1,0 +1,33 @@
+<!-- modificar_formulario.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario_Registro.css">
+    <title>Modificar Usuario</title>
+</head>
+<body>
+
+    <h2 style="text-align:center"> Modificar Usuario <br></h2>
+    <form action="modificar.php" method="POST" style="text-align: center;">
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required><br><br>
+
+        <label for="campo">Campo a modificar:</label>
+        <select name="campo" id="campo" required>
+            <option value="nombre">Nombre</option>
+            <option value="apellido">Apellido</option>
+            <option value="celular">Celular</option>
+            <option value="carrera">Carrera</option>
+            <option value="correo">Correo</option>
+        </select><br><br>
+
+        <label for="nuevo_valor">Nuevo Valor:</label>
+        <input type="text" id="nuevo_valor" name="nuevo_valor" required><br><br>
+
+        <input type="submit" value="Modificar Registro">
+    </form>
+
+</body>
+</html>

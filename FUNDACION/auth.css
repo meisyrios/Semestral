@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a8d8ea, #74c0fc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 10px 20px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #74c0fc;
+}
+
+header .empresa {
+    font-size: 1.5em;
+    color: #4a90e2;
+}
+
+/* Auth Options */
+.auth-options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.auth-options .btn {
+    background: #4a90e2;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.auth-options .btn:hover {
+    background: #003c7e;
+    transform: scale(1.05);
+}
+
+.auth-options .btn:before {
+    content: "🐾";
+    position: absolute;
+    left: -20px;
+    font-size: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.auth-options .btn:last-child:before {
+    content: "🐕";
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 15px 20px;
+    background: #4a90e2;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #dff0ff;
+}
+
+/* Additional Styling for Animal Theme */
+body:before {
+    content: "🐾";
+    font-size: 200px;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    top: 10%;
+    left: 5%;
+    transform: rotate(-15deg);
+}
+
+body:after {
+    content: "🐾";
+    font-size: 200px;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    bottom: 10%;
+    right: 5%;
+    transform: rotate(15deg);
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Encuentra tu compañero.css">
+    <title>Contáctanos</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> 
+            <img src="logofundacion3.jpg" alt="Logo de la compañia">
+            <h2 class="empresa"> Uniendo Huellitas </h2>
+        </a>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="salvandovidas.html">Salvando vidas</a></li>
+            <li><a href="unetealacausa.html">Únete a la causa</a></li>
+            <li><a href="contactanos.html" class="nav-link">Contactanos</a></li>
+        
+        </ul>
+    </nav>
+
+    <h1>Formulario de Adopción de Mascotas</h1>
+    <form action="procesando_busqueda.php" method="POST">
+        <!-- Datos del adoptante -->
+        <label for="nombre">Ingrese su nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <label for="correo">Ingrese su correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br><br>
+
+        <label for="telefono">Ingrese su número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <br><br>
+
+        <!-- Información sobre la adopción -->
+        <label for="animal-nombre">¿Hay un nombre específico del animal que te gustaría adoptar?</label>
+        <input type="text" id="animal-nombre" name="animal-nombre" placeholder="Ej: Luna, Max, etc." required>
+        <br><br>
+
+        <label for="motivo">¿Por qué deseas adoptar una mascota?</label>
+        <textarea id="motivo" name="motivo" rows="4" required></textarea>
+        <br><br>
+
+        <!-- Detalles sobre el hogar -->
+        <label for="hogar">¿Cómo describirías el entorno en el que vivirá la mascota? (Casa con jardín, departamento, etc.)</label>
+        <input type="text" id="hogar" name="hogar" required>
+        <br><br>
+
+        <label for="mascotas">¿Tienes otras mascotas en casa? Si es así, ¿cuáles?</label>
+        <input type="text" id="mascotas" name="mascotas" placeholder="Ej: Un perro y un gato">
+        <br><br>
+
+        <!-- Compromiso -->
+        <label for="responsabilidad">¿Estás dispuesto a cubrir las necesidades de la mascota (alimentación, cuidados, veterinario)?</label>
+        <select id="responsabilidad" name="responsabilidad" required>
+            <option value="sí">Sí</option>
+            <option value="no">No</option>
+        </select>
+        <br><br>
+
+        <!-- Botón de envío -->
+        <button type="submit" id="submit-btn">Enviar solicitud de adopción</button>
+    </form>
+</body>
+</html>
