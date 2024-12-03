@@ -1,8 +1,8 @@
 <?php
 class Conecta{
-    private $servername = "localhost";
+    private $servername = "172.30.158.22";
     private $username = "root";
-    private $password = "";
+    private $password = "fisc24*";
     private $dbname = "datos";
 
     private $cnn;
